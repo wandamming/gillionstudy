@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+  <title>10三级页面(表格)</title>
+  <link href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/Gschool.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+  	window.ctx="";
+  </script>
+  <style type="text/css">
+  	[ng-cloak]{
+  		display: none;
+  	}
+  </style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dynamicBootstrap" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/dynamicBootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="config.properties" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/gschool/areas/allAreas" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/allAreas"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commonsModules" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/commonsModules.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="system/branch/BranchModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/BranchModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GlobalHttpExceptionHandler" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GlobalHttpExceptionHandler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionResource" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionResource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionDirectiveModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDirectiveModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/UtilsModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/UtilsModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/GillionGlobalFiltersModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionGlobalFiltersModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionControlDirectiveModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionControlDirectiveModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/permit/GillionPermitModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionPermitModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionScopeModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionScopeModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/msg/GillionMsgModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionMsgModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionTooltipModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/dropdown/GillionDropdownModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDropdownModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/unit/GillionUnitModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionUnitModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/GroupListModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GroupListModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/clickbox/GillionClickBoxModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionClickBoxModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDateModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/TimeModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/TimeModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GlobalInterceptorModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GlobalInterceptorModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/ItemBinderModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ItemBinderModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tabindex/TabindexModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/TabindexModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="system/core/HeaderModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/HeaderModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionResourceServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionResourceServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-route" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular-route.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/I18NLoaderConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/I18NLoaderConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionValidatorConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionValidatorConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionResourceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionResourceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionCommonsQueryConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionCommonsQueryConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionCommonsSaveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionCommonsSaveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/ControlValidatorServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ControlValidatorServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/FieldValidatorDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/FieldValidatorDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/IllegalMessagesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/IllegalMessagesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/TooltipMessengerConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/TooltipMessengerConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationHolder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ValidationHolder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationErrorInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ValidationErrorInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationErrorResponder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ValidationErrorResponder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/DynamicValidationConfigsHolderConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/DynamicValidationConfigsHolderConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/service/AssociatePromiseServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/AssociatePromiseServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/ArraysConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ArraysConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/DatesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/DatesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/LocalStorageConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/LocalStorageConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/PredicatesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/PredicatesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/FunctionsConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/FunctionsConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/ZIndexConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ZIndexConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/AntPathMatcherConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/AntPathMatcherConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/SexToCnFilterConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/SexToCnFilterConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/DateFilterConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/DateFilterConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionTrimDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionTrimDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionPrecisionDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionPrecisionDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionDBCDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDBCDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionUpperCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionUpperCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionLowerCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionLowerCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionDigitalSpinnerDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDigitalSpinnerDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionNumericDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionNumericDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionCheckboxesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionCheckboxesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionRadiosConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionRadiosConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionWidthDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionWidthDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionHeightDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionHeightDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionPauseClickConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionPauseClickConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionFormatDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionFormatDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionFocusSelectConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionFocusSelectConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-placeholder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angularjs-placeholder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-resource" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular-resource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-base64" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular-base64.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-local-storage" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular-local-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionTooltipDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionTooltipServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/snapshot/GillionLocationServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionLocationServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/dropdown/GillionDropDownDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDropDownDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/unit/GillionUnitDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionUnitDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/GroupListConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GroupListConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/SimpleListConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/SimpleListConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/SimpleListItemConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/SimpleListItemConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-underscore" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/angular-underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDateConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateRangeConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDateRangeConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/CursorPositionUtil" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/CursorPositionUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/TimePane" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/TimePane.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/DBCUtils" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/DBCUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionHttpInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionHttpInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionHttpErrorInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionHttpErrorInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionDateTransactInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/GillionDateTransactInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/RepeatRequestInterceptorConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/RepeatRequestInterceptorConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/ControlValidator" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/ControlValidator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/AbstractIllegalMessenger" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/AbstractIllegalMessenger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/JQueryEvents" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/JQueryEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="laydate" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/laydate.js"></script><link type="text/css" rel="stylesheet" href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/laydate.css"><link type="text/css" rel="stylesheet" href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/laydate_002.css" id="LayDateSkin"></head>
+<body>
+  <div id="container">
+    <!--头部-->
+	<!-- ngInclude: './navigation' --><div id="header" ng-include="'./navigation'" class="ng-scope"><div class="logo ng-scope"><img src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/logo.png"></div>
+<div class="navigation ng-scope" ng-controller="HeaderController">
+    <ul>
+      <li ng-class="isHome" ng-click="goHome()" class="">HOME</li>
+      <!-- ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">training</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope on">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">EC2.1</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">EDS</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses -->
+        <li class="more"><a href="#"><img src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/more.png"></a></li>
+    </ul>
+</div>
+<div class="clear ng-scope"></div></div>
+	<!--头部结束-->
+	<!--主体-->
+	<div id="mianNav" ng-controller="BranchStageTreeController" class="ng-scope">
+	  <!--左边-->
+	  <div class="left">
+
+	    <!--目录-->
+	    <!-- ngRepeat: branchStage in branchStages --><div ng-repeat="branchStage in branchStages" class="ng-scope">
+	    	<div class="title-four ng-binding">新表格控件</div>
+	    	<ul class="catalog">
+	    		<!--<li ng-repeat="stageChapter in branchStage.stageChapters"><a target="{{stageChapter.target}}" href="#/{{stageChapter.url}}?courseId={{currentCourseId}}&amp;stageId={{currentStageId}}" >{{stageChapter.chaptername}}</a></li>-->
+				<!-- ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/function?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">使用说明</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/data?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">data</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/title?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">title</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/align?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">align</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/sortable?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">sortable</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/front-end-sort?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">front-end-sort</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/required?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">required</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/hidden?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">hidden</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/has-tip?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">has-tip</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-load-success?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-load-success</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-render?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-render</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/g-hot-index-column?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">g-hot-column-tmpl</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/g-hot-checkbox-column?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">g-hot-checkbox-column</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/g-hot-column-editor?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">g-hot-column-editor</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/selected-row?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getSelectedRow</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/checked-rows?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getCheckedRows</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/stretch?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">stretch</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/css-class?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">css-class</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/width?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">width, height</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-row-click?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-row-click, on-row-dbclick</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-check?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-check</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-check-all?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-check-all</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/col-settings-key?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">col-settings-key</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/drag-check?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">drag-check</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/filters?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">filters</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-after-filter?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-after-filter</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/startEdit?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">startEdit, finishEdit</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/addRow?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">addRow,deleteRows</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/validator-name?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">validator-name</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/validate-on-change-editing-row?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">validate-on-change-editing-row</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/validate?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">validateCell,validateRow</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/tree-view?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">tree-view</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/group?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">group</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/front-end-group?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">front-end-group</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/group-summary-func?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">group-summary-func</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/getCheckedLeafRows?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getCheckedLeafRows</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/getCheckedGroupRows?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getCheckedGroupRows</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/summary?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">summary</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/getVisibleFields?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getVisibleFields,getColumnDropFilters</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/getAddedAndModifedRecords?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">getAddedAndModifedRecords</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/transformColumns?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">transformColumns</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-after-select?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-after-select</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/on-before-column-sort?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">on-before-column-sort</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/hotTable/nls?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=50" class="ng-binding">nls</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters -->
+			</ul>
+	    </div><!-- end ngRepeat: branchStage in branchStages -->
+	  </div>
+	  <!--左边结束-->
+      <!--右边--> 
+	  <div class="right">
+	    <!--内容-->
+	    <!--<ng-view></ng-view>-->
+		  <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="right ng-scope">
+    <!--内容-->
+    <div class="content">
+        <!--标题-->
+        <div class="title-one">使用说明</div>
+        <!--标题结束-->
+        <!--按钮-->
+        <div class="button">
+            <a href="#"><input type="button" class="buyBtn-back" value="BACK"></a>
+            <a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/data"><input type="button" class="buyBtn-next" value="NEXT"></a>
+        </div>
+        <!--按钮结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">开发新表格目的</div>
+            <p>主要是为了支持大数据量的渲染。比如一个表格有2万条数据，旧表格可能会挂掉，新表格的渲染做了优化。</p>
+        </div>
+        <!--模块结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">新表格相关指令</div>
+            <!--表格-->
+            <table>
+                <tbody>
+                <tr>
+                    <th>指令名</th>
+                    <th>含义</th>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-table">g-hot-table</a></td>
+                    <td>新表格指令，用法与旧表格相同</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-column">g-hot-column</a></td>
+                    <td>新表格列定义指令，用法与旧表格相同</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-checkbox-column">g-hot-checkbox-column</a></td>
+                    <td>新表格复选框列定义指令，实现多选功能，用法与旧表格相同</td>
+
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-index-column">g-hot-index-column</a></td>
+                    <td>新表格列配置序号，用法与旧表格相同</td>
+
+                </tr>
+
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-hot-column-tmpl">g-hot-column-tmpl</a></td>-->
+                    <!--<td>新表格列模板指令（在该模板中可定义表格行的删除、编辑、保存功能），用法与旧表格相同</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-column-editor">g-hot-column-editor</a></td>
+                    <td>指令内定义列编辑的方式，用法与旧表格相同</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-hot-column-filter">g-hot-column-filter</a></td>-->
+                    <!--<td>筛选指令，可支持文本框、数字调节器、复选框、下拉框、联想控件等，用法与旧表格相同</td>-->
+                <!--</tr>-->
+                <!--<tr class="double">-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-action-remove">g-action-remove</a></td>-->
+                    <!--<td>行删除按钮指令（该指令位于列模板指令：g-column-tmpl中）</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-footer">g-footer</a></td>-->
+                    <!--<td>表格脚步指令（在该指令中可定义表格脚步单元格）</td>-->
+                <!--</tr>-->
+                <!--<tr class="double">-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-footer-cell">g-footer-cell</a></td>-->
+                    <!--<td>表格脚步单元格（该指令位于表格脚步指令：g-footer中）</td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+            <!--表格结束-->
+        </div>
+        <!--模块结束-->
+
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">新表格属性（g-hot-table）</div>
+            <!--表格-->
+            <table>
+                <tbody>
+                <tr>
+                    <th>参数名</th>
+                    <th>类型</th>
+                    <th>是否必须</th>
+                    <th>说明</th>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/source-name">source-name</a></td>
+                    <td>string</td>
+                    <td>Y</td>
+                    <td>数据源名称，保持不变</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/validator-name">validator-name</a></td>
+                    <td>string</td>
+                    <td>N</td>
+                    <td>校验名称，保持不变</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/validation-require-disabled">validation-require-disabled</a></td>-->
+                    <!--<td>string</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>设置表格新增/编辑一行数据时能禁用必输校验</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/columns">columns</a></td>-->
+                    <!--<td>Array&lt;string&gt;()</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>列对象，单向绑定，可绑定到外层scope后迭代列设置</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/selected-row">getSelectedRow</a></td>-->
+                    <!--<td>object</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格对象提供 getSelectedRow 方法用于选中行数据</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/checked-row">getCheckedRows</a></td>-->
+                    <!--<td>Array&lt;object&gt;()</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格对象提供 getCheckedRows 方法用于勾选数据集合</td>-->
+                <!--</tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-load-success">on-load-success</a></td>
+                    <td>function(grid - 表格对象,$event - 事件对象,source - 表格数据集,physicalSource - 表格数据集)</td>
+                    <td>N</td>
+                    <td>表格数据加载成功事件</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-render">on-render</a></td>
+                    <td>function(grid - 表格对象,source - 表格数据集)</td>
+                    <td>N</td>
+                    <td>表格初始化后的回调事件，NOTE：此时表格尚无数据</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-height">g-height</a></td>-->
+                    <!--<td>表格控件高度，单位为像素（px）或百分比（%）</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>注：单位与数字之间不可以有空格存在，否则高度设置无效</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-before-sort-column">on-before-sort-column</a></td>-->
+                    <!--<td>function(grid:Grid,sortName:String,sortDirection:String)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>可排序列的排序前的回调事件，return false可阻止排序</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-sort-column">on-sort-column</a></td>-->
+                    <!--<td>function(grid:Grid,sortName:String,sortDirection:String)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>可排序列的排序后的回调事件</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-before-select">on-before-select</a></td>-->
+                    <!--<td>function(grid:Grid,$event:Event,record:Object,$row:jQueryLite)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>行选中前的回调事件，return false可阻止选中</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-select">on-select</a></td>-->
+                    <!--<td>function(grid:Grid,$event:Event,record:Object,$row:jQueryLite)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>行选中后的回调事件</td>-->
+                <!--</tr>-->
+
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/css-class">css-class</a></td>
+                    <td>express / function() / function(row:Row)</td>
+                    <td>N</td>
+                    <td>新表格样式属性，用法与旧表格 g-item-class 类似</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/stretch">stretch</a></td>
+                    <td>String</td>
+                    <td>N</td>
+                    <td>新增属性，表格列宽度不足表格宽度时，如何处理空白部分(none, last, all)</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/width">width, height</a></td>
+                    <td>Number/String</td>
+                    <td>N</td>
+                    <td>表格宽度及高度</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-before-row-dbclick">on-before-row-dbclick</a></td>-->
+                    <!--<td>function(row:Row,grid:Grid)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>鼠标双击行前回调事件，若返回false则不能触发双击行后事件</td>-->
+                <!--</tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-row-click">on-row-click</a></td>
+                    <td>function(grid - 表格对象,$event - 事件对象,record - 
+当前点击行数据对象,colIndex - 当前点击所在的列序号,rowIndex - 当前点击所在的行序号（不包含隐藏行）,field - 
+当前点击所在的列字段名称,physicalRow - 当前点击所在的行序号（包含隐藏行）)</td>
+                    <td>N</td>
+                    <td>鼠标单击行事件</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-row-dbclick">on-row-dbclick</a></td>
+                    <td>function($event - 事件对象,grid - 表格对象,record - 
+当前点击行数据对象,colIndex - 当前点击所在的列序号,rowIndex - 当前点击所在的行序号（不包含隐藏行）,field - 
+当前点击所在的列字段名称,physicalRow - 当前点击所在的行序号（包含隐藏行）)</td>
+                    <td>N</td>
+                    <td>鼠标双击行事件</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-check">on-check</a></td>
+                    <td>function(grid - 表格对象,source - 
+表格数据集（层次数据结构）,physicalSource - 表格数据集（扁平数据结构）,checked - 勾选状态,row - 
+勾选行,physicalRow - 行序号,record - 行数据对象)</td>
+                    <td>N</td>
+                    <td>切换行勾选状态事件</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-check-all">on-check-all</a></td>
+                    <td>function(grid - 表格对象,$event - 事件对象,source - 表格数据集（层次数据结构）,physicalSource - 表格数据集（扁平数据结构）,checked - 全选状态)</td>
+                    <td>N</td>
+                    <td>切换全选选状态事件</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-before-cell-dbclick">on-before-cell-dbclick</a></td>-->
+                    <!--<td>function(row:Row,grid:Grid)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>鼠标双击单元格前回调事件，若返回false则不能触发双击单元格后事件，定义在 g-data-grid上可使整个表格单元格触发事件</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-cell-dbclick">on-cell-dbclick</a></td>-->
+                    <!--<td>function(row:Row,grid:Grid)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>鼠标双击单元格后回调事件，定义在 g-data-grid上可使整个表格单元格触发事件</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/can-toggle-selected">can-toggle-selected</a></td>-->
+                    <!--<td>Boolean</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>Boolean类型，值为true时，鼠标点击选中行后，再点击可取消选中行；值为false时，鼠标点击选中行后，再点击不可取消选中行（默认值）&nbsp;-->
+                        <!--选中行事件可传入参数 `isSelected`，当切换为未选中状态时该值为 `false`，选中时为 `true`</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/data-api">data-api</a></td>-->
+                    <!--<td>string</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格初始化后加载表格相关信息</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/enable-even-class">enable-even-class</a></td>-->
+                    <!--<td>Boolean</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格隔行换色。true：隔行换色；false：无隔行换色（默认值）</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/col-settings-key">col-settings-key</a></td>
+                    <td>String</td>
+                    <td>N</td>
+                    <td>页面布局名称，保持不变</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/tree-view">tree-view</a></td>
+                    <td></td>
+                    <td>N</td>
+                    <td>是否开启树装表格功能</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/group">group</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否开启分组表格功能</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/lazy">lazy</a></td>-->
+					<!--<td>Boolean</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>惰性加载表格。值为true：滚动时加载表格数据，值为false：初始化后加载所有表格数据（默认值）</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/drag-check">drag-check</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否开启拖动勾选，保持不变</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/filter">g-hot-column-filter</a></td>-->
+                    <!--<td>filter：text/number-spinner；g-column-filter：指令</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>用法与旧表格相同</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-focus-select">g-focus-select</a></td>-->
+                    <!--<td></td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>光标定位到可编辑的控件中，可默认为全选状态</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/addRow">keydown-new-row</a></td>-->
+                    <!--<td></td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>局部开启表格在最后一行按向下键（↓）新增一行数据的功能</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/addRow">new-row-record</a></td>-->
+                    <!--<td></td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>新增行数据初始化设置，Object类型。与`keydown-new-row`属性一同使用</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/addRow">addRow</a></td>-->
+                    <!--<td>function(physicalRow - 新增行所在的行序号,newRecord - 新增行初始数据)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>record：新增行数据初始化设置；index：新增行位置，默认在最后一行新增数据</td>-->
+                <!--</tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/filters">filters</a></td>
+                    <td></td>
+                    <td>N</td>
+                    <td>是否启用下拉过滤功能</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/front-end-sort">front-end-sort</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否使用前端排序方式，默认为请求后端进行排序</td>
+                </tr>
+                <tr>
+                    <td class="double"><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/front-end-group">front-end-group</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否使用前端分组方式，默认为请求后端进行分组</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/group-summary-func">group-summary-func</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>分组合计方法</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/validate-on-change-editing-row">validate-on-change-editing-row / validate-on-change-editing-cell</a></td>
+                    <td></td>
+                    <td>N</td>
+                    <td>新增属性，是否在切换编辑行/单元格时执行校验</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/col-settings-height">col-settings-height</a></td>-->
+                    <!--<td>Number</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>为表格布局自定义列表项配置高度</td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+            <!--表格结束-->
+        </div>
+        <!--模块结束-->
+
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">列定义属性（g-hot-column）</div>
+            <!--表格-->
+            <table>
+                <tbody>
+                <tr>
+                    <th>参数名</th>
+                    <th>类型</th>
+                    <th>是否必须</th>
+                    <th>说明</th>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/data">data</a></td>
+                    <td>express</td>
+                    <td>N</td>
+                    <td>列字段，支持 angular 过滤器表达式，保持不变</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/sortable">sortable</a></td>
+                    <td>void</td>
+                    <td>N</td>
+                    <td>是否可排序，保持不变</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/width">width</a></td>
+                    <td>Number/String</td>
+                    <td>N</td>
+                    <td>列宽度，保持不变</td>
+                </tr>
+                <!--<tr class="double">-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/editable">editable</a></td>-->
+                    <!--<td>Number/(text)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>行内编辑控件类型，无此属性则不可行内编辑，目前支持文本框数字调节器和文本框</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/filter">filter</a></td>-->
+                    <!--<td>text/number-spinner</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格多列筛选功能，目前只支持文本框（text）和数字调节器（number-spinner）2种类型</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/filter">g-column-filter</a></td>-->
+                    <!--<td></td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>多列筛选指令，可支持文本框、数字调节器、复选框、下拉框、联想控件等</td>-->
+                <!--</tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/g-hot-column-editor">g-hot-column-editor</a></td>
+                    <td></td>
+                    <td>N</td>
+                    <td>指令内定义列编辑的方式</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-item-class">g-item-class</a></td>-->
+                    <!--<td>express / function() / function(row:Row)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>表格样式属性，定义在 g-column上可使列样式根据表达式或者方法获取</td>-->
+                <!--</tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/align">align</a></td>
+                    <td>string</td>
+                    <td>N</td>
+                    <td>列对齐方式</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-before-cell-dbclick">on-before-cell-dbclick</a></td>-->
+                    <!--<td>function(row:Row,grid:Grid)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>鼠标双击单元格前回调事件，若返回false则不能触发双击单元格事件，定义在g-column上只能使某些被定义的单元格产生触发事件</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/on-cell-dbclick">on-cell-dbclick</a></td>-->
+                    <!--<td>function(row:Row,grid:Grid)</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>鼠标双击单元格后回调事件，定义在 g-column上只能使某些被定义的单元格产生触发事件</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/required">required</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否必填字段，保持不变</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/hidden">hidden</a></td>
+                    <td>Boolean</td>
+                    <td>N</td>
+                    <td>是否隐藏列，保持不变</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/hidden">title</a></td>
+                    <td>String</td>
+                    <td>N</td>
+                    <td>列标题文字</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td><a href="branch-stage#/widget/hotTable/g-per">g-per</a></td>-->
+                    <!--<td>string</td>-->
+                    <!--<td>N</td>-->
+                    <!--<td>支持对表格列进行权限控制，用于设置禁止显示的列。详情见按钮权限配置说明文档</td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+            <!--表格结束-->
+
+            <!--模块-->
+            <!--<div class="piece">-->
+                <!--<div class="title-two">复选框属性（g-checkbox-column）</div>-->
+                <!--&lt;!&ndash;表格&ndash;&gt;-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<th>参数名</th>-->
+                        <!--<th>类型</th>-->
+                        <!--<th>是否必须</th>-->
+                        <!--<th>说明</th>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><a href="branch-stage#/widget/hotTable/g-checkbox-column">g-checkbox-column</a></td>-->
+                        <!--<td>express</td>-->
+                        <!--<td>N</td>-->
+                        <!--<td>表格列配置复选框，与drag-check="true"一同使用时，鼠标拖拉多行时，系统自动选中这些行数据</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><a href="branch-stage#/widget/hotTable/g-item-disabled">g-item-disabled</a></td>-->
+                        <!--<td>express</td>-->
+                        <!--<td>N</td>-->
+                        <!--<td>定义列配置复选框的禁用功能，使用方法：在列定义指令g-checkbox-column中使用表达式禁用复选框</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <!--&lt;!&ndash;表格结束&ndash;&gt;-->
+        <!--</div>-->
+        <!--模块结束-->
+            <!--模块-->
+            <div class="piece">
+                <div class="title-two">复选框指令（g-hot-checkbox-column）</div>
+                <!--表格-->
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>参数名</th>
+                        <th>类型</th>
+                        <th>是否必须</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/width">width</a></td>
+                        <td>Number/String</td>
+                        <td>N</td>
+                        <td>宽度属性</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--表格结束-->
+            </div>
+            <!--模块结束-->
+            <!--模块结束-->
+            <!--模块-->
+            <div class="piece">
+                <div class="title-two">列配置序号指令（g-hot-index-column）</div>
+                <!--表格-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<th>参数名</th>-->
+                        <!--<th>类型</th>-->
+                        <!--<th>是否必须</th>-->
+                        <!--<th>说明</th>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><a href="branch-stage#/widget/hotTable/g-hot-index-column">g-hot-index-column</a></td>-->
+                        <!--<td></td>-->
+                        <!--<td>N</td>-->
+                        <!--<td>表格列配置序号</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <!--表格结束-->
+            </div>
+            <!--模块结束-->
+            <!--模块-->
+            <div class="piece">
+                <div class="title-two">表格对象方法（grid）</div>
+                <!--表格-->
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>方法名</th>
+                        <th>使用方式</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/selected-row">getSelectedRow</a></td>
+                        <td>grid.getSelectedRow()</td>
+                        <td>用于获取选中行数据</td>
+                    </tr>
+                    <tr class="double">
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/on-action">getCheckedRows</a></td>
+                        <td>grid.getCheckedRows()</td>
+                        <td>用于获取勾选数据集合</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/startEdit">startEdit</a></td>
+                        <td>grid.startEdit(row, col)</td>
+                        <td>开始编辑表格单元格</td>
+                    </tr>
+                    <tr class="double">
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/startEdit">finishEdit</a></td>
+                        <td>grid.finishEdit(validateType)</td>
+                        <td>结束编辑表格单元格</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/addRow">addRow</a></td>
+                        <td>grid.addRow(row,newRecord)</td>
+                        <td>新增行</td>
+                    </tr>
+                    <tr class="double">
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/addRow">deleteRow</a></td>
+                        <td>grid.deleteRow(physicalRow)</td>
+                        <td>删除行</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/validate">validateCell</a></td>
+                        <td>grid.validateCell(physicalRow, field)</td>
+                        <td>校验某个单元格数据</td>
+                    </tr>
+                    <tr class="double">
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/validate">validateRow</a></td>
+                        <td>grid.validateRow(physicalRow)</td>
+                        <td>校验某行数据</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/validate">validateAddedAndModifiedRows</a></td>
+                        <td>grid.validateAddedAndModifiedRows() </td>
+                        <td>校验所有新增行及修改行的数据</td>
+                    </tr>
+                    <tr class="double">
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/getCheckedLeafRows">getCheckedLeafRows</a></td>
+                        <td>grid.getCheckedLeafRows()</td>
+                        <td>获取分组表格的叶子节点数据集合</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/getCheckedGroupRows">getCheckedGroupRows</a></td>
+                        <td>grid.getCheckedGroupRows() </td>
+                        <td>获取分组表格的分组行数据集合</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--表格结束-->
+            </div>
+            <!--模块结束-->
+            <!--模块-->
+            <!--<div class="piece">-->
+                <!--<div class="title-two">脚步单元格属性（g-footer-cell）</div>-->
+                <!--&lt;!&ndash;表格&ndash;&gt;-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<th>参数名</th>-->
+                        <!--<th>类型</th>-->
+                        <!--<th>是否必须</th>-->
+                        <!--<th>说明</th>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><a href="branch-stage#/widget/hotTable/colspan">colspan</a></td>-->
+                        <!--<td>Number</td>-->
+                        <!--<td>N</td>-->
+                        <!--<td>跨列数</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <!--&lt;!&ndash;表格结束&ndash;&gt;-->
+            <!--</div>-->
+            <!--模块结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">简单用例</div>
+            <li>该控件不是公共控件需要手动引入framework/hotTable/HotTableModule模块</li>
+            <div class="example">
+<pre>&lt;script src="/bower_components/requirejs/require.js" data-main="/static/app.js"
+        data-bootstrap-modules="[ 'framework/hotTable/HotTableModule',
+                '/gschool/try/TestModule']"&gt;
+&lt;/script&gt;
+</pre>
+            </div>
+            <li>在html页面上使用新表格控件展示数据源信息</li>
+            <div class="example">
+<pre>&lt;g-hot-table ng-cloak data-source-name="employeeSource"
+             on-load-success="empGridSuccess(grid, source)"
+             checked-rows="empCheckedRows"
+             col-settings-key="empListSettings"
+             &gt;
+    &lt;g-hot-index-column&gt;&lt;/g-hot-index-column&gt;
+    &lt;g-hot-checkbox-column&gt;&lt;/g-hot-checkbox-column&gt;
+    &lt;g-hot-column data="name" sortable align="center" width="120" required title="姓名"&gt;
+        &lt;g-hot-column-editor&gt;
+            &lt;input type="text" name="name" ng-model="row.name"&gt;
+            &lt;input type="hidden" name="id" ng-model="row.id"/&gt;
+        &lt;/g-hot-column-editor&gt;
+    &lt;/g-hot-column&gt;
+    &lt;g-hot-column data="sex | sexToCn" sortable width="100" title="性别"&gt;
+        &lt;g-hot-column-editor&gt;
+            &lt;g-dropdown list-type="single"
+                        placeholder="请选择"
+                        source="sexData"
+                        display-express="name"
+                        value-prop="value"
+                        name="sex"
+                        ng-model="sex"&gt;
+            &lt;/g-dropdown&gt;
+        &lt;/g-hot-column-editor&gt;
+    &lt;/g-hot-column&gt;
+    &lt;g-hot-column data="birthDay" sortable width="200" title="出生日期"&gt;
+    &lt;/g-hot-column&gt;
+    &lt;g-hot-column data="age" sortable width="250" title="年龄"&gt;
+    &lt;/g-hot-column&gt;
+&lt;/g-hot-table&gt;
+</pre>
+            </div>
+            <p class="tiy">
+                <a href="http://172.16.0.142/html/contents/widget/window/try#/?url=contents/widget/hotTable/try1" target="_blank">亲自试一试</a>
+            </p>
+        </div>
+        <!--模块结束-->
+
+        <!--按钮-->
+        <div class="button">
+            <a href="#"><input type="button" class="buyBtn-back" value="BACK"></a>
+            <a href="http://172.16.0.142/html/branch-stage#/widget/hotTable/data"><input type="button" class="buyBtn-next" value="NEXT"></a>
+        </div>
+        <!--按钮结束-->
+    </div>
+    <!--内容结束-->
+</div>
+<!--右边结束-->
+<div class="clear"></div>
+</div>
+<!--主体结束--></div>
+		<!--内容结束-->
+	  </div> 
+	  <!--右边结束-->
+	  <div class="clear"></div>
+	</div>
+	<!--主体结束-->
+	<!-- ngInclude: './bottom' --><div id="bottom" ng-include="'./bottom'" class="ng-scope"><span class="ng-scope">Copyright @ 2013-2015 吉联科技  Gschool.cc All Rights Reversed. 备案号：沪ICP备2021010128号
+</span></div> 
+	<!--底部结束-->
+  </div>  
+  <script src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%A1%A8%E6%A0%BC)_files/require.js" data-main="../static/app.js" data-bootstrap-modules="['system/branch/BranchModule']"></script>   
+
+
+</body></html>

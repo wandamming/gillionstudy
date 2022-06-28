@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Expires" content="0" />   //指定网页缓存时间的期限，一旦网页缓存时间过期，网页就必须从服务器上重新缓存一次，才可以继续浏览页面！
+    <meta http-equiv="kiben" content="no-cache" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>吉联物流管理系统</title>
+    <script>
+        window.defines = [];
+        window.define = function (obj) {
+            window.defines.push(obj);
+        };
+    </script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/themes/config.js"></script>
+</head>
+
+<body>
+    <p>loading...</p>
+    <script>
+        window.onload = function () {
+            var global = window;
+            var themeConfig = global.defines[0];
+            var locale = localStorage.getItem('locale');
+            var defaultTheme = (function () {
+                var _theme;
+                try {
+                    _theme = themeConfig.defaultTheme;
+                } catch (e) {
+                    _theme = 'deep-blue';
+                    console.log(e);
+                }
+                return _theme;
+            })();;
+            var defaultLocalTheme = (function () {
+                var _theme;
+                try {
+                    _theme = themeConfig.localeTheme[locale];
+                } catch (e) {
+                    console.log(e);
+                }
+                return _theme;
+            })();
+            var storageTheme = localStorage.getItem('theme');
+            var currentTheme = storageTheme || defaultLocalTheme || defaultTheme;
+            var search = location.search;
+            var hash = location.hash;
+            var url = '/themes/' + currentTheme + '/html/index.html' + search + hash;
+            if (!storageTheme) {
+                localStorage.setItem('theme', currentTheme);
+            }
+            $.ajax({
+                    url: url,
+                    timeout: 1000 * 60 * 10
+                })
+                .done(function (data) {
+                    delete global.define;
+                    delete global.defines;
+                    global._isDocumentReady = true;
+                    requestAuthentication(data);
+                }).fail(function (err) {
+                    document.write(err.responseText);
+                    console.error(err);
+                });
+
+            function requestAuthentication(data) {
+                var authCtx = '';
+                var appCode = localStorage.getItem("appCode");
+                if (appCode !== 'XYWL') {
+                    authCtx = '/vshttp';
+                } else {
+                    authCtx = '/xy_gurs_business';
+                }
+                $.ajax({
+                    url: authCtx + '/authentication/system/security/getSessionAttrsAndNoPermits?pageUrl=INDEX'
+                }).done(function (data1) {
+                    var data3;
+                    var dataArr = data.split('用户信息菜单栏');
+                    data3 = dataArr[0];
+
+
+                    if (dataArr.length > 1) {
+
+                        if (data1.redirectUrl !== '/notAccess.html') {
+                            if (isCon(data1.noPermits, '/modifyPwdManage.html')) {
+                                data3 += '<p><a ng-click="modPassword();">修改密码</a></p>';
+
+                            }
+                            if (isCon(data1.noPermits, '/html/xy/user/sysUserInfoEdit.html')) {
+                                data3 += '<p><a ng-click="modUserInfo()">用户信息维护</a></p>';
+
+                            }
+                            if (isCon(data1.noPermits, '/html/xy/user/sysUserAgentManage.html')) {
+                                data3 += ' <p><a ng-click="modUserAgent()">代理人设置</a></p>';
+
+                            }
+                            if (isCon(data1.noPermits, '/html/xy/user/sysOfficeSwitch.html')) {
+                                data3 += '<p><a ng-click="modSwitchOffice()">组织切换</a></p>';
+
+                            }
+                            if (isCon(data1.noPermits, '/html/xy/user/sysUserAgentSwitch.html')) {
+                                data3 += '   <p><a ng-click="modSwitchAgent()">代理人切换</a></p>';
+                            }
+                            if (isCon(data1.noPermits, '/html/xy/user/sysUserInternetSpeed.html')) {
+                                data3 += '   <p><a ng-click="modInterSpeed()">网络检测</a></p>';
+                            }
+                        }
+                        data3 += '<p><a ng-click="modWikiCenter()">帮助中心</a></p>';
+                        data3 += dataArr[1];
+                    }
+
+                    dataArr = data3.split('语言列表');
+                    let data4 = dataArr[0]
+                    $.ajax({
+                        url: "/xy_common_business/dictionary/queryDictRows?params=MD_CODE_DICT$LANGUAGE_SWITCH",
+                        timeout: 1000 * 60 * 10
+                    }).done(function (data) {
+                        const result = JSON.parse(data)
+                        if (result.success) {
+                            const list = result['MD_CODE_DICT$LANGUAGE_SWITCH']
+                            localStorage.setItem('LANGUAGE_SWITCH', JSON.stringify(list))
+                            list.forEach(e => {
+                                data4 += ' <p><a ng-click="changeLanguage(\'' + e.key + '\')">' + e.value + '</a></p>';
+                            })
+                        }
+                        data4 += dataArr[1]
+                        document.write(data4);
+                    }).error(e => {
+                        console.error('获取语言栏列表失败')
+                        document.write(data4 + ' <p><a ng-click="changeLanguage(\'zh\')">简体中文</a></p>' + dataArr[1])
+                    })
+
+                }).error(function (result) {
+                    var data3;
+                    var dataArr = data.split('用户信息菜单栏');
+                    var data3 = dataArr[0];
+                    if (dataArr.length > 1) {
+                        data3 += '<p><a ng-click="modWikiCenter()">帮助中心</a></p>';
+                        data3 += dataArr[1];
+                    }
+
+                    document.write(data3);
+                }).always(function () {
+                    delete global.$;
+                })
+            }
+        };
+
+
+
+        function isCon(arr, val){
+        if(arr){
+
+            for(var i=0; i<arr.length; i++){
+                if(arr[i].indexOf(val)!=-1)
+                    return false;
+            }  }
+            return true;
+         }
+    </script>
+</body>
+
+</html>

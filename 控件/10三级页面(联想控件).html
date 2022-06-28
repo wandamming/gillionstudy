@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+  <title>10三级页面(表格)</title>
+  <link href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/Gschool.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+  	window.ctx="";
+  </script>
+  <style type="text/css">
+  	[ng-cloak]{
+  		display: none;
+  	}
+  </style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dynamicBootstrap" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/dynamicBootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="config.properties" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/gschool/areas/allAreas" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/allAreas"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commonsModules" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/commonsModules.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="system/branch/BranchModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/BranchModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GlobalHttpExceptionHandler" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GlobalHttpExceptionHandler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionResource" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionResource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionDirectiveModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDirectiveModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/UtilsModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/UtilsModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/GillionGlobalFiltersModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionGlobalFiltersModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionControlDirectiveModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionControlDirectiveModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/permit/GillionPermitModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionPermitModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionScopeModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionScopeModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/msg/GillionMsgModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionMsgModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionTooltipModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/dropdown/GillionDropdownModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDropdownModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/unit/GillionUnitModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionUnitModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/GroupListModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GroupListModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/clickbox/GillionClickBoxModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionClickBoxModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDateModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/TimeModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/TimeModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GlobalInterceptorModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GlobalInterceptorModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/ItemBinderModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ItemBinderModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tabindex/TabindexModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/TabindexModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="system/core/HeaderModule" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/HeaderModule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/commons/GillionResourceServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionResourceServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/I18NLoaderConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/I18NLoaderConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionValidatorConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionValidatorConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionResourceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionResourceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionCommonsQueryConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionCommonsQueryConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/GillionCommonsSaveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionCommonsSaveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/ControlValidatorServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ControlValidatorServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/FieldValidatorDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/FieldValidatorDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/IllegalMessagesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/IllegalMessagesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/TooltipMessengerConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/TooltipMessengerConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationHolder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ValidationHolder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationErrorInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ValidationErrorInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/ValidationErrorResponder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ValidationErrorResponder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/DynamicValidationConfigsHolderConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/DynamicValidationConfigsHolderConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/service/AssociatePromiseServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/AssociatePromiseServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/ArraysConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ArraysConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/DatesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/DatesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/LocalStorageConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/LocalStorageConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/PredicatesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/PredicatesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/FunctionsConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/FunctionsConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/ZIndexConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ZIndexConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/AntPathMatcherConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/AntPathMatcherConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/SexToCnFilterConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/SexToCnFilterConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/filters/DateFilterConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/DateFilterConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-route" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular-route.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-resource" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular-resource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionTrimDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionTrimDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionPrecisionDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionPrecisionDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionDBCDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDBCDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionUpperCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionUpperCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionLowerCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionLowerCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionDigitalSpinnerDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDigitalSpinnerDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionNumericDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionNumericDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionCheckboxesConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionCheckboxesConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionRadiosConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionRadiosConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionWidthDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionWidthDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionHeightDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionHeightDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionCaseDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionCaseDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionPauseClickConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionPauseClickConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionFormatDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionFormatDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/control/GillionFocusSelectConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionFocusSelectConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-placeholder" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angularjs-placeholder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-base64" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular-base64.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-local-storage" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular-local-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionTooltipDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/tooltip/GillionTooltipServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionTooltipServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/snapshot/GillionLocationServiceConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionLocationServiceConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/dropdown/GillionDropDownDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDropDownDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/unit/GillionUnitDirectiveConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionUnitDirectiveConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/GroupListConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GroupListConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/SimpleListConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/SimpleListConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/simplelist/SimpleListItemConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/SimpleListItemConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDateConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/date/GillionDateRangeConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDateRangeConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-underscore" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/angular-underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/CursorPositionUtil" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/CursorPositionUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/time/TimePane" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/TimePane.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/DBCUtils" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/DBCUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionHttpInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionHttpInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionHttpErrorInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionHttpErrorInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/GillionDateTransactInterceptor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/GillionDateTransactInterceptor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/interceptors/RepeatRequestInterceptorConstructor" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/RepeatRequestInterceptorConstructor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/directive/ControlValidator" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/ControlValidator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/validation/AbstractIllegalMessenger" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/AbstractIllegalMessenger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework/utils/JQueryEvents" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/JQueryEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="laydate" src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/laydate.js"></script><link type="text/css" rel="stylesheet" href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/laydate.css"><link type="text/css" rel="stylesheet" href="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/laydate_002.css" id="LayDateSkin"></head>
+<body>
+  <div id="container">
+    <!--头部-->
+	<!-- ngInclude: './navigation' --><div id="header" ng-include="'./navigation'" class="ng-scope"><div class="logo ng-scope"><img src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/logo.png"></div>
+<div class="navigation ng-scope" ng-controller="HeaderController">
+    <ul>
+      <li ng-class="isHome" ng-click="goHome()" class="">HOME</li>
+      <!-- ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">training</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope on">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">EC2.1</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses --><li ng-class="course.isOn" ng-repeat="course in courses" class="ng-scope">
+          <a ng-click="redirectToCourse(course,courses)" href="javascript:" class="ng-binding">EDS</a>
+          <!--<a ng-if="course.coursename!='training'" ng-click="redirectToCourse(course,courses)" href="javascript:">{{course.coursename}}</a>-->
+      </li><!-- end ngRepeat: course in courses -->
+        <li class="more"><a href="#"><img src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/more.png"></a></li>
+    </ul>
+</div>
+<div class="clear ng-scope"></div></div>
+	<!--头部结束-->
+	<!--主体-->
+	<div id="mianNav" ng-controller="BranchStageTreeController" class="ng-scope">
+	  <!--左边-->
+	  <div class="left">
+
+	    <!--目录-->
+	    <!-- ngRepeat: branchStage in branchStages --><div ng-repeat="branchStage in branchStages" class="ng-scope">
+	    	<div class="title-four ng-binding">联想控件</div>
+	    	<ul class="catalog">
+	    		<!--<li ng-repeat="stageChapter in branchStage.stageChapters"><a target="{{stageChapter.target}}" href="#/{{stageChapter.url}}?courseId={{currentCourseId}}&amp;stageId={{currentStageId}}" >{{stageChapter.chaptername}}</a></li>-->
+				<!-- ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/function?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">使用说明</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/multi?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">multi</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/keyword-prop?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">keyword-prop</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/display-express?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">display-express</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/empty-search?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">char-length-search</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/delay-time?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">delay-time</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/g-data-bind?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">g-data-bind </a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/cascade?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding"></a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/filter-name?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">filter-name</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/width?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">width</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/selected-row?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">selected-row</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/value-prop?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">value-prop</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/source-name?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">source-name</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/g-associate-th?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">g-associate-column</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/value-separator?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">value-separator</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/on-select?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">on-select</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/on-before-select?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">on-before-select</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/display-init?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">display-init</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/is-show?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">is-show</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/unmatch-remove?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">unmatch-remove</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/show-event?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">show-event</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/preventTabindex?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">prevent-tabindex</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/dropdown/g-focus-select?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">g-focus-select</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/receiver?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">receiver</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/AssociateSetting?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">列配置提取</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/business-key?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">business-key</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters --><li ng-repeat="stageChapter in branchStage.stageChapters" class="ng-scope"><a target="" href="#/widget/associate/async-display-init?courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b&amp;stageId=18" class="ng-binding">async-display-init</a></li><!-- end ngRepeat: stageChapter in branchStage.stageChapters -->
+			</ul>
+	    </div><!-- end ngRepeat: branchStage in branchStages -->
+	  </div>
+	  <!--左边结束-->
+      <!--右边--> 
+	  <div class="right">
+	    <!--内容-->
+	    <!--<ng-view></ng-view>-->
+		  <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="right ng-scope">
+    <!--内容-->
+    <div class="content">
+        <!--标题-->
+        <div class="title-one">联想控件</div>
+        <!--标题结束-->
+        <!--按钮-->
+        <div class="button">
+            <a href="#"><input type="button" class="buyBtn-back" value="BACK"></a>
+            <a href="http://172.16.0.142/html/branch-stage#/widget/associate/multi"><input type="button" class="buyBtn-next" value="NEXT"></a>
+        </div>
+        <!--按钮结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">控件简介</div>
+            <p>该控件用于将某一数据源以下拉列表的形式展示出来，选项信息可通过输入关键字或下拉形式选择。</p>
+            <p>该控件除了使用鼠标单击选中选项外，也可使用键盘上下键移动选项进行选择，单选时：通过空格键（space）和回车键（enter）选中并关闭；多选时：通过空格键（space）选中但不关闭或者回车键（enter）选中并关闭。</p>
+            <ul>
+                <li>主指令（g-associate）：用于定义联想控件</li>
+                <li>子指令（g-associate-column）：用于设置表格头部字段名称和过滤器</li>
+                <li>关联指令（g-data-bind）：用于设置与联想控件已勾选显示的对应字段 </li>
+            </ul>
+            <p>注1：当数据源多于10条数据时，联想控件将自动显示分页效果</p>
+            <p>注2：联想输入框回车后默认可选中第一行数据</p>
+            <p>注3：多选情况下，联想控件筛选时按分隔符可自动选中第一行数据，默认分隔符为`,`</p>
+            <p>注4：精确匹配记录时按Tab键选中</p>
+            <p>注5：精确匹配记录时移开焦点选中（目前只支持单选）</p>
+        </div>
+        <!--模块结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">属性列表（主指令：g-associate）</div>
+            <!--表格-->
+            <table>
+                <tbody>
+                <tr>
+                    <th>属性</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/multi">multi</a></td>
+                    <td>boolean类型，设置搜索结果是否可多选，true：多选；false：单选。默认为false</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/source-name">source-name</a></td>
+                    <td>数据源名称，跟g-data-source指令对应</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/value-separator">value-separator</a></td>
+                    <td>多条数据分隔符，默认为','</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/keyword-prop">keyword-prop</a></td>
+                    <td>关键词的名称，即发送到后台的请求参数名，默认值'keyword'</td>
+                </tr>
+
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/empty-search">char-length-search</a></td>
+                    <td>设置当关键词发起请求时的最短长度，默认为1</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/delay-time">delay-time</a></td>
+                    <td>输入时请求延迟，默认是300ms</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/display-express">display-express</a></td>
+                    <td>数据源中的显示字段</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/value-prop">value-prop</a></td>
+                    <td>数据源中的隐藏字段</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/selected-row">selected-row</a></td>
+                    <td>联想控件必填属性，数组类型，已选行数据</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/width">width</a></td>
+                    <td>设置联想控件及其子指令的的宽度，单位有%：百分比；in：英寸；cm：厘米；mm：毫米；pt：磅数；pc：12点活字；ex：字母高度的一半；em：字体高度；px：像素(默认)</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/on-select">on-select</a></td>
+                    <td>选择时触发的事件</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/on-before-select">on-before-select</a></td>
+                    <td>选择前触发的事件，返回false则取消选择</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/display-init">display-init</a></td>
+                    <td>回显需要设置的字符串，与ng-model的值一一对应</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/unmatch-remove">unmatch-remove</a></td>
+                    <td>输入框中手动输入值，光标移开后，若输入值不合格，则系统是否自动清除掉手动输入的值。true：清除；false：保留（默认值）</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/show-event">show-event</a></td>
+                    <td>显示联想下拉框事件，值可为jquery事件。如：鼠标点击元素click事件、鼠标双击元素dbclick事件、聚焦focus事件，默认为focus事件</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/prevent-tabindex">prevent-tabindex</a></td>
+                    <td>在联想控件中按回车键是否能跳到下一个输入框，true不可以，false可以</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/g-focus-select">g-focus-select</a></td>
+                    <td>鼠标点击输入框全选功能</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--表格结束-->
+            </div>
+        <div class="piece">
+            <!--表格-->
+            <div class="title-two">子指令：g-associate-column</div>
+            <table>
+                <tbody>
+                <tr>
+                    <th>属性</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/width">width</a></td>
+                    <td>表格列宽度，单位有%：百分比；in：英寸；cm：厘米；mm：毫米；pt：磅数；pc：12点活字；ex：字母高度的一半；em：字体高度；px：像素(默认)</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/display-express">display-express</a></td>
+                    <td>对应字段名称</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/filter-name">filter-name</a></td>
+                    <td>过滤器名称，多个用'|'隔开</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/is-show">is-show</a></td>
+                    <td>是否显示联想控件头部字段名称</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <!--表格结束-->
+        <div class="piece">
+            <div class="title-two">关联指令： g-data-bind </div>
+
+            <table>
+                <tbody>
+                <tr>
+                    <th>属性</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/g-data-bind">g-data-bind</a></td>
+                    <td>联想控件的关联指令，用于设置与联想控件已勾选显示的对应字段（应与联想控件selected-row属性对应）</td>
+                </tr>
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/value-prop">value-prop</a></td>
+                    <td>对应字段名称</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/value-separator"> value-separator</a></td>
+                    <td>多条数据分隔符，默认为','</td>
+                </tr>
+                <!--<tr class="double">
+                    <td><a href="branch-stage#/widget/associate/cascade">cascade</a></td>
+                    <td>是否级联,即输入框修改 联想控件随之改动,默认为true</td>
+                </tr>-->
+                <tr class="double">
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/multi">multi</a></td>
+                    <td>boolean类型，设置搜索结果是否可多选，true：多选；false：单选。默认为false（注：当联想控件处于多选状态时，关联指令必须同步设置multi="true"）</td>
+                </tr>
+                <tr>
+                    <td><a href="http://172.16.0.142/html/branch-stage#/widget/associate/ng-model">ng-model</a></td>
+                    <td>用于绑定关联指令的值（即绑定value-prop字段的值）</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--表格结束-->
+        </div>
+        <!--模块结束-->
+        <!--模块-->
+        <div class="piece">
+            <div class="title-two">简单用例</div>
+            <p>该控件不是公共模块需要手动引入framework/associate/GillionAssociateModule联想控件模块</p>
+            <div class="example">
+<pre>  &lt;script src="/bower_components/requirejs/require.js" data-main="/static/app.js"
+        data-bootstrap-modules="['framework/datasource/DataSourceModule',
+        'framework/associate/GillionAssociateModule',
+        '/gschool/try/TestModule']"&gt;
+  &lt;/script&gt;
+</pre>
+            </div>
+            <p>在HTML页面上使用联想控件，通过输入的信息从数据源中筛选出符合条件的结果呈现在下拉框中。</p>
+            <div class="example">
+<pre>&lt;g-data-source
+        url="/gschool/system/users/getPage"
+        page-size="10"
+        current-page="1"
+        records-prop="data.records"
+        total-page-field = "data.totalPage"
+        data-params="testParams"
+        data-source-name="source1"
+        total-record-prop="data.totalRecord"
+        current-page-param="page"
+        allow-auto-load = "true"
+        page="true"
+    &gt;
+&lt;/g-data-source&gt;
+&lt;g-associate ng-cloak data-source-name="source1" keyword-prop="keyword" selected-row="selectedRow1"
+    delay-time="400" ng-model="display2" display-express="username" value-prop="userId"&gt;
+    &lt;g-associate-column width="200px" display-express="userId" filter-name="uppercase"&gt;客户编号&lt;/g-associate-column&gt;
+    &lt;g-associate-column width="100px" display-express="username" &gt;用户名&lt;/g-associate-column&gt;
+    &lt;g-associate-column display-express="password" filter-name="uppercase"&gt;密码&lt;/g-associate-column&gt;
+&lt;/g-associate&gt;
+    &lt;input g-data-bind="selectedRow1" value-prop="username" ng-model="other"&gt;
+</pre>
+            </div>
+            <p class="tiy">
+                <a href="http://172.16.0.142/html/contents/widget/window/try#/?url=contents/widget/associate/try1" target="_blank">亲自试一试</a>
+            </p>
+        </div>
+        <!--模块结束-->
+
+        <!--按钮-->
+        <div class="button">
+            <a href="#"><input type="button" class="buyBtn-back" value="BACK"></a>
+            <a href="http://172.16.0.142/html/branch-stage#/widget/associate/multi"><input type="button" class="buyBtn-next" value="NEXT"></a>
+        </div>
+        <!--按钮结束-->
+    </div>
+    <!--内容结束-->
+</div>
+<!--右边结束-->
+<div class="clear ng-scope"></div>
+
+<!--主体结束--></div>
+		<!--内容结束-->
+	  </div> 
+	  <!--右边结束-->
+	  <div class="clear"></div>
+	</div>
+	<!--主体结束-->
+	<!-- ngInclude: './bottom' --><div id="bottom" ng-include="'./bottom'" class="ng-scope"><span class="ng-scope">Copyright @ 2013-2015 吉联科技  Gschool.cc All Rights Reversed. 备案号：沪ICP备2021010128号
+</span></div> 
+	<!--底部结束-->
+  </div>  
+  <script src="10%E4%B8%89%E7%BA%A7%E9%A1%B5%E9%9D%A2(%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6)_files/require.js" data-main="../static/app.js" data-bootstrap-modules="['system/branch/BranchModule']"></script>   
+
+
+</body></html>

@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang=""><head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>导入、导出功能使用【T1】 · 吉联培训</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="吉联技术部">
+        
+        
+    
+    <style class="anchorjs"></style><link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/style_002.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/prism-ghcolors.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://172.16.0.142/document/training-program/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="http://172.16.0.142/document/training-program/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="http://172.16.0.142/document/training-program/EC3.0/EC%E7%BC%93%E5%AD%98%E4%BD%BF%E7%94%A8.html">
+    
+    
+    <link rel="prev" href="http://172.16.0.142/document/training-program/EC3.0/%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%8E%A7%E4%BB%B6%E4%BD%BF%E7%94%A8.html">
+    
+
+    <style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style></head>
+    <body>
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary" style="width: 300px; left: 0px; position: absolute;">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1、新手开发</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1.1、掌握规范</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../代码规范讲解以及工具使用/项目结构规范.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E8%8C%83.html">
+            
+                    
+                    项目结构规范【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../代码规范讲解以及工具使用/吉联代码规范.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E5%90%89%E8%81%94%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83.html">
+            
+                    
+                    吉联编码规范【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../代码规范讲解以及工具使用/数据库规范.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83.html">
+            
+                    
+                    数据库规范【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../代码规范讲解以及工具使用/Sonar使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Sonar%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    Sonar使用【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../代码规范讲解以及工具使用/源码版本管理规范.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%BA%90%E7%A0%81%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E8%A7%84%E8%8C%83.html">
+            
+                    
+                    源码版本管理规范【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../通用技术框架/常用工具类讲解.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E9%80%9A%E7%94%A8%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E8%AE%B2%E8%A7%A3.html">
+            
+                    
+                    常用工具类讲解【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1.2、常用工具使用</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../代码规范讲解以及工具使用/maven.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/maven.html">
+            
+                    
+                    maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../代码规范讲解以及工具使用/nginx.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../代码规范讲解以及工具使用/postman.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/postman.html">
+            
+                    
+                    postman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../代码规范讲解以及工具使用/谷歌浏览器调试.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%AF%95.html">
+            
+                    
+                    谷歌浏览器调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1.3、EC开发入门</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="框架结构讲解、环境配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E8%AE%B2%E8%A7%A3%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    框架结构讲解、环境配置【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="增删改查接口开发.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91.html">
+            
+                    
+                    增删改查接口开发【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="前端框架特性介绍.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E7%89%B9%E6%80%A7%E4%BB%8B%E7%BB%8D.html">
+            
+                    
+                    前端框架特性介绍【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="常规表单控件、联想控件的使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%B8%B8%E8%A7%84%E8%A1%A8%E5%8D%95%E6%8E%A7%E4%BB%B6%E3%80%81%E8%81%94%E6%83%B3%E6%8E%A7%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    常规表单控件、联想控件的使用【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="新表格控件的使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E6%96%B0%E8%A1%A8%E6%A0%BC%E6%8E%A7%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    新表格控件的使用【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="表单验证配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    表单验证配置【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="国际化实现.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%9B%BD%E9%99%85%E5%8C%96%E5%AE%9E%E7%8E%B0.html">
+            
+                    
+                    国际化实现【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="功能、数据权限管理.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%8A%9F%E8%83%BD%E3%80%81%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86.html">
+            
+                    
+                    功能、数据权限管理【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="常见异常和解决方案.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html">
+            
+                    
+                    常见异常和解决方案【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1.4、EDS开发入门</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../EDS3.0/EDS框架讲解、环境配置、微服务基础概念.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/EDS%E6%A1%86%E6%9E%B6%E8%AE%B2%E8%A7%A3%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html">
+            
+                    
+                    EDS框架讲解、环境配置、微服务基础概念【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../EDS3.0/EC项目集成.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/EC%E9%A1%B9%E7%9B%AE%E9%9B%86%E6%88%90.html">
+            
+                    
+                    EC项目集成【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../EDS3.0/服务注册与消费.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E6%B6%88%E8%B4%B9.html">
+            
+                    
+                    服务注册与消费【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../EDS3.0/消息队列使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    消息队列使用【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">1.5、监控工具使用</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../异常排查实践/GMonitor5监控使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%BC%82%E5%B8%B8%E6%8E%92%E6%9F%A5%E5%AE%9E%E8%B7%B5/GMonitor5%E7%9B%91%E6%8E%A7%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    GMonitor5监控使用【T0】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2、开发进阶</li>
+        
+        
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2.1、了解框架</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../通用技术框架/Spring框架基本概念.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E9%80%9A%E7%94%A8%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/Spring%E6%A1%86%E6%9E%B6%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html">
+            
+                    
+                    Spring框架基本概念【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2.2、EC进阶功能使用</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="上传、下载控件使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%8E%A7%E4%BB%B6%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    上传、下载控件使用【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="9.2" data-path="导入、导出功能使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    导入、导出功能使用【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="EC缓存使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/EC%E7%BC%93%E5%AD%98%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    EC缓存使用【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="批处理器.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E6%89%B9%E5%A4%84%E7%90%86%E5%99%A8.html">
+            
+                    
+                    批处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="地区控件使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E5%9C%B0%E5%8C%BA%E6%8E%A7%E4%BB%B6%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    地区控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="EC定时调度/分布式定时调度管理.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/EC%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6%E7%AE%A1%E7%90%86.html">
+            
+                    
+                    分布式定时调度管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="ec-rule-number-文档/规则编号生成.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/ec-rule-number-%E6%96%87%E6%A1%A3/%E8%A7%84%E5%88%99%E7%BC%96%E5%8F%B7%E7%94%9F%E6%88%90.html">
+            
+                    
+                    规则编号获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="ec-mq组件使用文档.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EC3.0/ec-mq%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.html">
+            
+                    
+                    ec-mq组件使用文档(新)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2.3、EDS进阶功能使用</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../EDS3.0/服务治理实践.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E5%AE%9E%E8%B7%B5.html">
+            
+                    
+                    服务治理实践【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../EDS3.0/定时任务.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1.html">
+            
+                    
+                    定时任务【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../EDS3.0/日志监控.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%97%A5%E5%BF%97%E7%9B%91%E6%8E%A7.html">
+            
+                    
+                    日志监控【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2.4、公共服务集成</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../认证中心/部署与集成.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E8%AE%A4%E8%AF%81%E4%B8%AD%E5%BF%83/%E9%83%A8%E7%BD%B2%E4%B8%8E%E9%9B%86%E6%88%90.html">
+            
+                    
+                    认证中心部署与集成【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../配置中心/部署与集成.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/%E9%83%A8%E7%BD%B2%E4%B8%8E%E9%9B%86%E6%88%90.html">
+            
+                    
+                    配置中心部署与集成【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">2.5、问题分析</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../异常排查实践/项目启动异常.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%BC%82%E5%B8%B8%E6%8E%92%E6%9F%A5%E5%AE%9E%E8%B7%B5/%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8.html">
+            
+                    
+                    项目启动异常【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../异常排查实践/性能瓶颈点定位分析.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%BC%82%E5%B8%B8%E6%8E%92%E6%9F%A5%E5%AE%9E%E8%B7%B5/%E6%80%A7%E8%83%BD%E7%93%B6%E9%A2%88%E7%82%B9%E5%AE%9A%E4%BD%8D%E5%88%86%E6%9E%90.html">
+            
+                    
+                    性能瓶颈点定位分析【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3、初级开发经理</li>
+        
+        
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3.1、EDS高级功能</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../EDS3.0/服务网关.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3.html">
+            
+                    
+                    服务网关【T1】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../EDS3.0/服务网关-系统对接.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-%E7%B3%BB%E7%BB%9F%E5%AF%B9%E6%8E%A5.html">
+            
+                    
+                    服务网关-系统对接【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../EDS3.0/服务网关-EDS服务开发.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-EDS%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91.html">
+            
+                    
+                    服务网关-EDS服务开发【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="../EDS3.0/服务网关-WebService服务开发.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-WebService%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91.html">
+            
+                    
+                    服务网关-WebService服务开发【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.5" data-path="../EDS3.0/服务网关-HTTP服务开发.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-HTTP%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91.html">
+            
+                    
+                    服务网关-HTTP服务开发【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.6" data-path="../EDS3.0/服务网关-Netty服务开发.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-Netty%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91.html">
+            
+                    
+                    服务网关-Netty服务开发【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.7" data-path="../EDS3.0/EDI服务配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/EDI%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    EDI服务配置【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.8" data-path="../EDS3.0/数据抽取.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E6%95%B0%E6%8D%AE%E6%8A%BD%E5%8F%96.html">
+            
+                    
+                    数据抽取【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.9" data-path="../EDS3.0/Number服务配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/Number%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    Number服务配置【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.10" data-path="../EDS3.0/JDBC服务配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/JDBC%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    JDBC服务配置【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.11" data-path="../EDS3.0/WebService服务管理.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/WebService%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86.html">
+            
+                    
+                    WebService服务管理【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.12" data-path="../EDS3.0/Http服务管理.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/Http%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86.html">
+            
+                    
+                    Http服务管理【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3.2、规则引擎应用</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../规则引擎/目标场景与配置使用.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E8%A7%84%E5%88%99%E5%BC%95%E6%93%8E/%E7%9B%AE%E6%A0%87%E5%9C%BA%E6%99%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8.html">
+            
+                    
+                    目标场景与配置使用【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="../规则引擎/常见异常和解决方案.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E8%A7%84%E5%88%99%E5%BC%95%E6%93%8E/%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html">
+            
+                    
+                    常见异常和解决方案【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3.3、规范管理</li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../代码规范讲解以及工具使用/Sonar部署.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E8%AE%B2%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Sonar%E9%83%A8%E7%BD%B2.html">
+            
+                    
+                    Sonar部署【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3.4、问题分析</li>
+        
+        
+    
+        <li class="chapter " data-level="17.1" data-path="../异常排查实践/内存溢出的原因与分析.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%BC%82%E5%B8%B8%E6%8E%92%E6%9F%A5%E5%AE%9E%E8%B7%B5/%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E5%88%86%E6%9E%90.html">
+            
+                    
+                    内存溢出的原因与分析【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">3.5、系统设计</li>
+        
+        
+    
+        <li class="chapter " data-level="18.1" data-path="../系统设计/系统设计要点.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%82%B9.html">
+            
+                    
+                    系统设计要点【T2】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">4、中级开发经理</li>
+        
+        
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">4.1、EDS深入应用</li>
+        
+        
+    
+        <li class="chapter " data-level="20.1" data-path="../EDS3.0/并行调度、串行调度.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E5%B9%B6%E8%A1%8C%E8%B0%83%E5%BA%A6%E3%80%81%E4%B8%B2%E8%A1%8C%E8%B0%83%E5%BA%A6.html">
+            
+                    
+                    并行调度、串行调度【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="20.2" data-path="../EDS3.0/其他服务组件.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/EDS3.0/%E5%85%B6%E4%BB%96%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6.html">
+            
+                    
+                    其他服务组件【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">4.2、数据实时处理平台应用</li>
+        
+        
+    
+        <li class="chapter " data-level="21.1" data-path="../数据实时处理平台/数据实时处理平台使用手册.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E6%95%B0%E6%8D%AE%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%95%B0%E6%8D%AE%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html">
+            
+                    
+                    数据实时处理平台使用手册【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="21.2" data-path="../数据实时处理平台/常见异常和解决方案.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E6%95%B0%E6%8D%AE%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E5%B8%B8%E8%A7%81%E5%BC%82%E5%B8%B8%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html">
+            
+                    
+                    常见异常和解决方案【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">4.3、工作流</li>
+        
+        
+    
+        <li class="chapter " data-level="22.1" data-path="../工作流使用手册/工作流使用手册.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html">
+            
+                    
+                    工作流使用手册【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="22.2" data-path="../工作流/常见异常和解决方案.md" style="padding-left: 30px;">
+            
+                <span>
+            
+                    
+                    常见异常和解决方案【T3】
+            
+                
+            
+
+            
+        </span></li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">4.4、系统设计</li>
+        
+        
+    
+        <li class="chapter " data-level="23.1" data-path="../系统设计/微服务概念.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A6%82%E5%BF%B5.html">
+            
+                    
+                    微服务概念【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.2" data-path="../系统设计/微服务设计要点.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%82%B9.html">
+            
+                    
+                    微服务设计要点【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.3" data-path="../系统设计/事务数据一致性解决方案.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/%E4%BA%8B%E5%8A%A1%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html">
+            
+                    
+                    事务数据一致性解决方案【T3】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">5、高级开发经理</li>
+        
+        
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">5.1、分库分表设计</li>
+        
+        
+    
+        <li class="chapter " data-level="25.1" data-path="../分库分表设计/MyCat部署与配置.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E8%AE%BE%E8%AE%A1/MyCat%E9%83%A8%E7%BD%B2%E4%B8%8E%E9%85%8D%E7%BD%AE.html">
+            
+                    
+                    MyCat部署与配置【T4】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="25.2" data-path="../分库分表设计/分库分表的概念.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E8%AE%BE%E8%AE%A1/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E6%A6%82%E5%BF%B5.html">
+            
+                    
+                    分库分表的概念【T4】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="25.3" data-path="../分库分表设计/水平分表局限场景解析与解决方案.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E8%AE%BE%E8%AE%A1/%E6%B0%B4%E5%B9%B3%E5%88%86%E8%A1%A8%E5%B1%80%E9%99%90%E5%9C%BA%E6%99%AF%E8%A7%A3%E6%9E%90%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html">
+            
+                    
+                    水平分表局限场景解析与解决方案【T4】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">6、历史版本</li>
+        
+        
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">6.1、EC</li>
+        
+        
+    
+        <li class="chapter " data-level="27.1" data-path="../历史版本/EC前端历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/EC%E5%89%8D%E7%AB%AF%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    EC前端历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="27.2" data-path="../历史版本/EC后端框架历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/EC%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    EC后端框架历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">6.2、EDS</li>
+        
+        
+    
+        <li class="chapter " data-level="28.1" data-path="../历史版本/EDS 客户端历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/EDS%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    EDS 客户端历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="28.2" data-path="../历史版本/EDS 引擎端历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/EDS%20%E5%BC%95%E6%93%8E%E7%AB%AF%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    EDS 引擎端历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="28.3" data-path="../历史版本/EDS 管理台历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/EDS%20%E7%AE%A1%E7%90%86%E5%8F%B0%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    EDS 管理台历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header" style="font-size: 1.3em; color: rgb(85, 85, 85);">6.3、数据同步</li>
+        
+        
+    
+        <li class="chapter " data-level="29.1" data-path="../历史版本/数据实时处理平台历史版本清单.html" style="padding-left: 30px;">
+            
+                <a href="http://172.16.0.142/document/training-program/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/%E6%95%B0%E6%8D%AE%E5%AE%9E%E6%97%B6%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.html">
+            
+                    
+                    数据实时处理平台历史版本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    <div class="divider-content-summary"><div class="divider-content-summary__icon"><i class="fa fa-ellipsis-v"></i></div></div></div>
+
+    <div class="book-body" style="left: 300px; position: absolute;">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="#"><i class="fa fa-align-justify"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="http://172.16.0.142/document/training-program/">导入、导出功能使用【T1】</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="导入、导出功能使用【t1】">导入、导出功能使用【T1】</h1>
+<h2 id="1、课件说明" targetref="1、课件说明"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#1、课件说明" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>1、课件说明</h2>
+<p>学习如何将数据库表中的数据导出到Excel中、如何将Excel中的数据导入到数据库表中。</p>
+<h2 id="2、学习步骤" targetref="2、学习步骤"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#2、学习步骤" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2、学习步骤</h2>
+<h3 id="21-环境准备" targetref="2.1 环境准备"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#21-环境准备" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.1 环境准备</h3>
+<p>1、根据《<a href="http://wiki.gillion.com.cn:7000/document/training-program/EC3.0/%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E8%AE%B2%E8%A7%A3%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html" target="_blank">框架结构讲解、环境配置</a>》章节中的介绍准备基本的EC3.0项目环境，也可以直接<a href="">下载空项目</a>进行练习</p>
+<p>2、数据库准备4张表</p>
+<p>导出配置表：export_config</p>
+<pre class="language-" style="position: relative;"><code class="lang-java">CREATE TABLE `export_config` <span class="token punctuation">(</span>
+  `id` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL DEFAULT <span class="token string">''</span><span class="token punctuation">,</span>
+  `print_mode` <span class="token function">tinyint</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `template` longblob<span class="token punctuation">,</span>
+  `async` <span class="token function">tinyint</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `dictionary_url` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `file_name` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `page_size` <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `class_name` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `source_url` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `statistics_url` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `column_setting` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">4000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `sort_type` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  PRIMARY KEY <span class="token punctuation">(</span>`id`<span class="token punctuation">)</span> USING BTREE
+<span class="token punctuation">)</span> ENGINE<span class="token operator">=</span>InnoDB DEFAULT CHARSET<span class="token operator">=</span>utf8 ROW_FORMAT<span class="token operator">=</span>COMPACT<span class="token punctuation">;</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>异步导出任务进度表：export_task_queue</p>
+<pre class="language-" style="position: relative;"><code class="lang-java">CREATE TABLE `export_task_queue` <span class="token punctuation">(</span>
+  `export_request_key` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `export_config_key` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `cookie_values` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `params` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `progress` <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> DEFAULT <span class="token string">'0'</span><span class="token punctuation">,</span>
+  `request_path` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `filename` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `state` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> DEFAULT <span class="token string">'WAITING'</span><span class="token punctuation">,</span>
+  `user_id` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">36</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `error_message` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `create_datetime` datetime DEFAULT NULL<span class="token punctuation">,</span>
+  PRIMARY KEY <span class="token punctuation">(</span>`export_request_key`<span class="token punctuation">)</span> USING BTREE
+<span class="token punctuation">)</span> ENGINE<span class="token operator">=</span>InnoDB DEFAULT CHARSET<span class="token operator">=</span>utf8 ROW_FORMAT<span class="token operator">=</span>COMPACT<span class="token punctuation">;</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>导入配置表：import_config</p>
+<pre class="language-" style="position: relative;"><code class="lang-java">CREATE TABLE `import_config` <span class="token punctuation">(</span>
+  `id` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL DEFAULT <span class="token string">''</span><span class="token punctuation">,</span>
+  `class_name` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `template` longblob NOT NULL<span class="token punctuation">,</span>
+  `dictionary_url` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `deal_service` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `method_name` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `validate_head` <span class="token function">bit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `validate_method` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `async` <span class="token function">bit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> DEFAULT b<span class="token string">'0'</span><span class="token punctuation">,</span>
+  `allow_parameter` <span class="token function">bit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> DEFAULT b<span class="token string">'0'</span><span class="token punctuation">,</span>
+  `primary_columns` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">4000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `define_column` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">4000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `children_table` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">4000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  PRIMARY KEY <span class="token punctuation">(</span>`id`<span class="token punctuation">)</span> USING BTREE
+<span class="token punctuation">)</span> ENGINE<span class="token operator">=</span>InnoDB DEFAULT CHARSET<span class="token operator">=</span>utf8 ROW_FORMAT<span class="token operator">=</span>COMPACT<span class="token punctuation">;</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>异步导入任务进度表：</p>
+<pre class="language-" style="position: relative;"><code class="lang-java">CREATE TABLE `import_task_queue` <span class="token punctuation">(</span>
+  `import_request_key` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `import_config_key` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
+  `original_filename` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `cookie_values` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `progress` <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> DEFAULT <span class="token string">'0'</span><span class="token punctuation">,</span>
+  `request_path` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `error_message` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `state` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> DEFAULT <span class="token string">'WAITING'</span><span class="token punctuation">,</span>
+  `user_id` <span class="token function">varchar</span><span class="token punctuation">(</span><span class="token number">26</span><span class="token punctuation">)</span> DEFAULT NULL<span class="token punctuation">,</span>
+  `create_datetime` datetime DEFAULT NULL<span class="token punctuation">,</span>
+  PRIMARY KEY <span class="token punctuation">(</span>`import_request_key`<span class="token punctuation">)</span> USING BTREE
+<span class="token punctuation">)</span> ENGINE<span class="token operator">=</span>InnoDB DEFAULT CHARSET<span class="token operator">=</span>utf8 ROW_FORMAT<span class="token operator">=</span>COMPACT<span class="token punctuation">;</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<h3 id="22-excel导出配置" targetref="2.2 Excel导出配置"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#22-excel导出配置" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.2 Excel导出配置</h3>
+<p>EXCEL导出：是把要导出的数据填充到EXCEL模板中，生成EXCEL文件输出到前端。故首先需要配置EXCEL导出的一些配置信息。</p>
+<h4 id="121-excel数据库表配置说明">1.2.1 Excel数据库表配置说明</h4>
+<p>下面是EXCEL导出配置信息说明：</p>
+<h5 id="1211-excel导出配置信息">1.2.1.1 Excel导出配置信息</h5>
+<p>EXCEL导出配置信息可在数据库中进行配置维护，也可以直接使用代码将配置信息写入，下面介绍使用数据库配置方式来进行配置。</p>
+<p><strong>EXPORT_CONFIG:</strong></p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>字段说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>主键，对应前台的key值</td>
+</tr>
+<tr>
+<td>template</td>
+<td>EXCEL模板(二进制数据存储)</td>
+</tr>
+<tr>
+<td>async</td>
+<td>是否异步打印(0：否；1：是)</td>
+</tr>
+<tr>
+<td>dictionary_url</td>
+<td>获取数据字典controller的URL地址，如：/ec-demo/dictionary</td>
+</tr>
+<tr>
+<td>file_name</td>
+<td>定义导出EXCEL的文件名</td>
+</tr>
+<tr>
+<td>page_size</td>
+<td>异步打印时，每次请求的记录条数</td>
+</tr>
+<tr>
+<td>class_name</td>
+<td>打印数据的实体类名(全限定名)</td>
+</tr>
+<tr>
+<td>source_url</td>
+<td>获取导出的数据源地址，即controller的映射地址</td>
+</tr>
+<tr>
+<td>column_setting</td>
+<td>分组表格导出，不使用excel模板时，在此配置column</td>
+</tr>
+<tr>
+<td>statistics_url</td>
+<td>分组表格导出时，获取最后一行统计值的Controller的URL地址</td>
+</tr>
+<tr>
+<td>sort_type</td>
+<td>分组表格导出方式，共3种方式.0,1,2</td>
+</tr>
+</tbody>
+</table>
+<h5 id="122-excel模板说明">1.2.2. EXCEL模板说明</h5>
+<p>使用方法：#!属性名称</p>
+<table>
+<thead>
+<tr>
+<th>导出格式</th>
+<th>模板</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本格式</td>
+<td>#!属性名称</td>
+<td></td>
+</tr>
+<tr>
+<td>数字格式</td>
+<td>#!属性名称{"type":"number","format":"######.00"}</td>
+<td>type指number类型，format的#代表整数保留位数，小数点后面0的个数代表小数保留位数，若位数不够补零</td>
+</tr>
+<tr>
+<td>日期格式</td>
+<td>#!属性名称{"type":"date","format":"yyyy-MM-dd"}</td>
+<td>type指date类型，format指日期格式，默认format格式为"yyyy-MM-dd hh:mm:ss"</td>
+</tr>
+<tr>
+<td>布尔类型</td>
+<td>#!属性名称{"values":{"true":"对应值1","false":"对应值2"}}</td>
+<td>values指导出布尔类型对应值</td>
+</tr>
+<tr>
+<td>临时数据字典(小量的)</td>
+<td>#!属性名称{"values":{"x0":"对应值1","x1":"对应值2","x3":省略...}}</td>
+<td>导出数据时需对相应字段进行转换，当转换数量较少时可使用临时数据字典进行配置转换</td>
+</tr>
+<tr>
+<td>大量数据字典</td>
+<td>#!属性名称{"dictionary":"dictName"}</td>
+<td>导出数据时需对相应字段进行转换，当转换数量较多时可使用大量数据字典进行配置，具体实例如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>其中，籍贯字段的配置依据如下所示（即大量数据字典配置）</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token annotation punctuation">@Controller</span>
+<span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/dictionary"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DictionaryController</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> AreaRepositoryImpl areaRepositoryImpl<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>method <span class="token operator">=</span> RequestMethod<span class="token punctuation">.</span>GET<span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@ResponseBody</span>
+    <span class="token keyword">public</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span>Object<span class="token punctuation">&gt;</span></span> <span class="token function">returnDictionary</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span>required <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span> String <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>params<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span>Object<span class="token punctuation">&gt;</span></span> mapData <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span>Object<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        HashMap<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span>Object<span class="token punctuation">&gt;</span></span> dictMap<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span>Object<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        Iterable<span class="token generics function"><span class="token punctuation">&lt;</span>Area<span class="token punctuation">&gt;</span></span> iterables <span class="token operator">=</span> areaRepositoryImpl<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>Area iterable<span class="token operator">:</span>iterables<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            dictMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span> iterable<span class="token punctuation">.</span><span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> iterable<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        mapData<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"area"</span><span class="token punctuation">,</span>dictMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ResultUtils<span class="token punctuation">.</span><span class="token function">getSuccessResultData</span><span class="token punctuation">(</span>mapData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<ul>
+<li><p>此时导出数据字典使用模板：#!place{"dictionary":"area"}，其中area为DictionaryController中mapData集合的key值
+excel模板还可配置导出时的列样式功能。操作简单，只需要设置excel导出表头的单元格格式即可。例如：</p>
+</li>
+<li><p>设置某列导出后字体大小</p>
+</li>
+<li>设置某列导出后对齐方式</li>
+<li>设置某列导出后字体颜色</li>
+<li>设置某列导出后背景颜色</li>
+<li>设置合并单元格后导出前后是否一致等</li>
+</ul>
+<h3 id="23同步导出" targetref="2.3同步导出"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#23同步导出" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.3同步导出</h3>
+<p>1、准备数据源：/ec-demo/students/selectAll</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/source1.jpg" alt="source1"></p>
+<p>2、根据数据源字段准备Excel模板</p>
+<ul>
+<li><p>学生名称居中且红色字体样式</p>
+</li>
+<li><p>年龄加粗</p>
+</li>
+<li><p>日期格式化导出</p>
+</li>
+<li><p>字典转换，教师Id转为教师名称显示，其中teacher在接口中是一个map格式，如：{"1":"zhangsan","2","lisi"}</p>
+</li>
+</ul>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/template.jpg" alt="template"></p>
+<p>3、其中教师id转为对应的教师名称导出，字典接口代码如下：</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span> value <span class="token operator">=</span> <span class="token string">"/dictionary"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Dictionarys <span class="token function">getDictionary</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        List<span class="token generics function"><span class="token punctuation">&lt;</span>Teacher<span class="token punctuation">&gt;</span></span> teachers <span class="token operator">=</span> teacherService<span class="token punctuation">.</span><span class="token function">selectByExample</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Dictionarys dictionarys <span class="token operator">=</span> Dictionarys<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Dictionary dictionary <span class="token operator">=</span> Dictionary<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span>Teacher teacher<span class="token operator">:</span>teachers<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            dictionary<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>teacher<span class="token punctuation">.</span><span class="token function">getTeacherId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>teacher<span class="token punctuation">.</span><span class="token function">getTeacherName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        dictionarys<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"teacher"</span><span class="token punctuation">,</span>dictionary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> dictionarys<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>4、配置数据库表：export_config</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/exportConfig1.jpg" alt="exportConfig1"></p>
+<p>5、postman测试： <a href="http://localhost:8080/ec-demo/export/excel?key=studentId" target="_blank">http://localhost:8080/ec-demo/export/excel?key=studentId</a></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/export1.jpg" alt="export1"></p>
+<h3 id="24-分页查询导出" targetref="2.4 分页查询导出"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#24-分页查询导出" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.4 分页查询导出</h3>
+<p>1、准备数据源：/ec-demo/students/selectByPage</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/source2.jpg" alt="source2"></p>
+<p>2、在2.3同步导出表配置基础之上修改<code style="color: red; font-weight: bold; font-size: 0.8em;">source_url</code>为：/ec-demo/students/selectByPage</p>
+<p>3、postman测试：导出第一页，每页大小为10，且查询条件为age&gt;=25</p>
+<p> <a href="http://localhost:8080/ec-demo/export/excel?key=studentId&amp;pageSize=10&amp;currentPage=1&amp;age=25" target="_blank">http://localhost:8080/ec-demo/export/excel?key=studentId&amp;pageSize=10&amp;currentPage=1&amp;age=25</a></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/export2.jpg" alt="export2"></p>
+<h3 id="25-异步导出" targetref="2.5 异步导出"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#25-异步导出" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.5 异步导出</h3>
+<p>1、在2.4导出表配置基础之上修改：async设为1 （注：异步导出只支持分页数据源）</p>
+<p>当export_config表中的async设为0时采用的是同步导出方式；</p>
+<p>当export_config表中的async设为1时采用的是异步导出方式，异步导出主要针对大数据量时所采用的导出方式，当点击导出按钮后，导出进度任务表<code style="color: red; font-weight: bold; font-size: 0.8em;">export_task_queue</code>将根据<code style="color: red; font-weight: bold; font-size: 0.8em;">export_config</code>表自动增加一条记录：</p>
+<p>2、postman测试：</p>
+<p>请求URL <a href="http://localhost:8080/ec-demo/export/excel?key=studentId&amp;pageSize=10&amp;currentPage=1" target="_blank">http://localhost:8080/ec-demo/export/excel?key=studentId&amp;pageSize=10&amp;currentPage=1</a> ，往任务进度表：export_task_queue中新增一个导出队列。</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/task1.jpg" alt="task1"></p>
+<p>3、查看数据库任务进度表：export_task_queue</p>
+<p>export_request_key：导出队列唯一标识</p>
+<p>progress：导出进度，100代表导出</p>
+<p>state：导出状态，waiting代表处于等待状态</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/task2.jpg" alt="task2"></p>
+<p>4、定时器定时执行任务，读取export_task_queue中状态为WAITING的记录，将导出的Excel上传到某位置暂存着（该位置由上传控件决定）。由于没有配置定时器，这里手动运行服务去执行任务：<a href="http://127.0.0.1:8080/ec-demo/export/esb/doExport%E3%80%82%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D%E8%A7%81%EF%BC%9A[2.3%E3%80%81EDS%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1](./EDS3.0/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1.html" target="_blank">http://127.0.0.1:8080/ec-demo/export/esb/doExport。定时器使用介绍见：[2.3、EDS进阶功能使用-定时任务](./EDS3.0/定时任务.html</a>)</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/task3.jpg" alt="task3"></p>
+<p>5、查看数据库任务进度表：export_task_queue</p>
+<p>progress：导出进度，100代表导出</p>
+<p>state：导出状态，DONE代表导出成功</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/task4.jpg" alt="task4"></p>
+<p>6、下载导出的Excel：<a href="http://localhost:8080/ec-demo/export/download?exportRequestKey=excelFileKey" target="_blank">http://localhost:8080/ec-demo/export/download?exportRequestKey=excelFileKey</a></p>
+<p>其中exportRequestKey的值为导出队列唯一标识，代表下载对应的excel文件</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/export1.jpg" alt="export1"></p>
+<h3 id="26-布局导出" targetref="2.6 布局导出"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#26-布局导出" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.6 布局导出</h3>
+<h3 id="27-excel导入配置" targetref="2.7 Excel导入配置"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#27-excel导入配置" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>2.7 Excel导入配置</h3>
+<p>EXCEL导入：是根据EXCEL模板读取传入的EXCEL文件，并存入到List对象中，以供各业务系统使用。首先需要配置EXCEL导入的一些配置信息。</p>
+<h4 id="271-excel导入数据库配置">2.7.1 Excel导入数据库配置</h4>
+<p>EXCEL导入配置信息可在数据库中进行配置维护，也可以直接使用代码将配置信息写入，下面介绍使用数据库配置方式来进行配置。</p>
+<p><strong>import_config:</strong></p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>字段说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>主键，对应前台的key值</td>
+</tr>
+<tr>
+<td>template</td>
+<td>EXCEL模板（二进制数据存储），具体配置方法见5.1.2.1</td>
+</tr>
+<tr>
+<td>class_name</td>
+<td>读取excel转化成的实体对象的类名(全限定名)</td>
+</tr>
+<tr>
+<td>dictionary_url</td>
+<td>获取数据字典controller的URL地址</td>
+</tr>
+<tr>
+<td>deal_service</td>
+<td>结果处理类</td>
+</tr>
+<tr>
+<td>method_name</td>
+<td>结果处理类的方法名</td>
+</tr>
+<tr>
+<td>allow_parameter</td>
+<td>类处理方法是否允许带参数，0代表不允许，1代表允许。允许：方法为dealExcelList(List<employee> excelData,Map<string,object> param) ；不允许：dealExcelList(List<employee> excelData)</employee></string,object></employee></td>
+</tr>
+<tr>
+<td>validate_head</td>
+<td>校验导入的excel文件表头与模板表头是否一一对应。1：校验；0：不校验。当校验不通过时弹出提示窗：导入的EXCEL文件表头设置错误</td>
+</tr>
+<tr>
+<td>async</td>
+<td>是否异步导入(0：否；1：是)，具体介绍见1.3</td>
+</tr>
+<tr>
+<td>primary_columns</td>
+<td>主表列属性</td>
+</tr>
+<tr>
+<td>define_column</td>
+<td>主从表列属性</td>
+</tr>
+<tr>
+<td>children_table</td>
+<td>从表属性名定义</td>
+</tr>
+<tr>
+<td>validate_method</td>
+<td>行校验方法。在导入的过程中可以对传入的EXCEL每一行进行校验。只需要在数据库(import_config)中，配置validate_method属性。如果校验的过程中要退出，直接抛异常。也可以对每一行返回校验信息。校验信息会在结果处理方法的param中。</td>
+</tr>
+</tbody>
+</table>
+<p>import_config 配置实例如下（由于图片过长这里一张表分两次截图）：</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/import1.jpg" alt="import1"></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/import2.jpg" alt="import2"></p>
+<h5 id="2711-template导入模板说明">2.7.1.1 template导入模板说明</h5>
+<table>
+<thead>
+<tr>
+<th>导出格式</th>
+<th>模板</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本格式</td>
+<td>#!属性名称</td>
+<td></td>
+</tr>
+<tr>
+<td>数字格式</td>
+<td>#!属性名称{"type":"number","format":"######.00"}</td>
+<td>type指number类型，format的#代表整数保留位数，小数点后面0的个数代表小数保留位数，若位数不够补零</td>
+</tr>
+<tr>
+<td>日期格式</td>
+<td>#!属性名称{"type":"date","format":"yyyy-MM-dd"}</td>
+<td>type指date类型，format指日期格式，默认format格式为"yyyy-MM-dd hh:mm:ss"</td>
+</tr>
+<tr>
+<td>数据字典格式</td>
+<td>#!属性名称{"dictionary_url":"map_key"}</td>
+<td>导出数据时需对相应字段进行转换，可使用数据字典进行配置，具体实例如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>EXCEL导入模板(template)配置实例如下：</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/1557458823.jpg" alt="import"></p>
+<p>其中，部门、性别、籍贯字段的配置采用数据字典，使用方式与导出的数据字典一样，这边不再述赘。</p>
+<h5 id="2712-excel导入处理类">2.7.1.2 EXCEL导入处理类</h5>
+<p>框架解析传入的excel后，会根据配置的ClassName，生成List结果。再调用业务的结果处理类执行后续操作。下面是结果处理类示例： excelImportDemoServiceImpl：</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>gillion<span class="token punctuation">.</span>service<span class="token punctuation">.</span>impl<span class="token punctuation">;</span>
+
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token comment">/**
+ *  导入excel实现类
+ *
+ * @author wengms
+ * @date 6:33 PM 2018/12/19
+ */</span>
+<span class="token annotation punctuation">@Service</span>
+<span class="token annotation punctuation">@Slf4j</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ExcelImportDemoServiceImpl</span> <span class="token keyword">implements</span> <span class="token class-name">ExcelImportDemoService</span> <span class="token punctuation">{</span>
+
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> StudentService studentService<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 批量导入学生信息数据
+     * @param excelData
+     */</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">importStudents</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        studentService<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span>excelData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">importStudents</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">,</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> param<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        studentService<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span>excelData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> String <span class="token function">validateData</span><span class="token punctuation">(</span>Object rowObject<span class="token punctuation">,</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Integer<span class="token punctuation">&gt;</span></span> columnMap<span class="token punctuation">,</span> Integer row<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>row <span class="token operator">==</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">"第7行错了"</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>row <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">"第10行错误"</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<h4 id="2713-同步导入">2.7.1.3 同步导入</h4>
+<p>1、excel模板准备</p>
+<p>导入和导出如果是操作同个对象的话可以使用相同的Excel模块。这里照样使用上方导出示例的模板，但是要把模板中日期格式修改一下，因为数据库里存存储的日期格式为：yyyy-MM-dd</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/template.jpg" alt="template"></p>
+<p>2、新建导入处理接口</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ExcelImportDemoService</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 批量导入学生信息接口
+     * @param excelData
+     * @return void
+     * @author wengms
+     * @date 3:30 PM 2018/12/19
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">importStudents</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>3、新建导入处理类：</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token annotation punctuation">@Service</span>
+<span class="token annotation punctuation">@Slf4j</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ExcelImportDemoServiceImpl</span> <span class="token keyword">implements</span> <span class="token class-name">ExcelImportDemoService</span> <span class="token punctuation">{</span>
+
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> StudentService studentService<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 批量保存学生信息数据
+     * @param excelData
+     */</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">importStudents</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        studentService<span class="token punctuation">.</span><span class="token function">saveOrUpdate</span><span class="token punctuation">(</span>excelData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>3、导入表配置</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/importConfig.jpg" alt="importConfig"></p>
+<p>4、导入数据准备</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in1.jpg" alt="in1"></p>
+<p>5、postman测试</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/importPostman.jpg" alt="importPostman"></p>
+<p>6、检查是否导入成功</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in2.jpg" alt="in2"></p>
+<h6 id="27131-携带参数">2.7.1.3.1 携带参数</h6>
+<p>1、增加导入处理类，这里仅打印参数信息。</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">importStudentsParam</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">,</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> param<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception<span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"导入的内容为：{}"</span><span class="token punctuation">,</span><span class="token keyword">new</span> <span class="token class-name">ObjectMapper</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">writeValueAsString</span><span class="token punctuation">(</span>excelData<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"导入的param为：{}"</span><span class="token punctuation">,</span><span class="token keyword">new</span> <span class="token class-name">ObjectMapper</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">writeValueAsString</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>2、配置数据库表：import_config，将allow_parameter设为1，代表导入excel数据集时可携带参数；同时修改字段method_name为以上方法<code style="color: red; font-weight: bold; font-size: 0.8em;">importStudentsParam</code></p>
+<p>3、postman 测试</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in14.jpg" alt="in14"></p>
+<h6 id="27132-行校验">2.7.1.3.2 行校验</h6>
+<p>1、增加导入行校验方法</p>
+<p>以下代码代表第7行和第10行被过滤掉</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> String <span class="token function">validateData</span><span class="token punctuation">(</span>Object rowObject<span class="token punctuation">,</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Integer<span class="token punctuation">&gt;</span></span> columnMap<span class="token punctuation">,</span> Integer row<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>row <span class="token operator">==</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">"第7行错了"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>row <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">"第10行错误"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>2、配置数据库表：import_config，设置validate_method为以上方法<code style="color: red; font-weight: bold; font-size: 0.8em;">validateData</code> </p>
+<p>3、postman测试</p>
+<p>发现先执行validateData方法再去执行导入处理类，导入处理类的入参是经过校验方法验证过滤后的数据。</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/validateData.jpg" alt="validate"></p>
+<h4 id="2714-异步导入">2.7.1.4 异步导入</h4>
+<p>当import_config表中的async设为0时采用的是同步导入方式；当import_config表中的async设为1时采用的是异步导入方式；</p>
+<p>1、使用以上导入模板，将async设为1</p>
+<p>2、postman测试：<a href="http://localhost:8080/ec-demo/import/excel" target="_blank">http://localhost:8080/ec-demo/import/excel</a></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in3.jpg" alt="in3"></p>
+<p>3、检查import_task_queue表中的任务队列，发现增加了一个队列。此时：progress=0，state=WAITING</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in4.jpg" alt="in4"></p>
+<p>4、EDS定时器定时执行任务，这里手动运行：<a href="http://localhost:8080/ec-demo/import/excel/esb/doImport" target="_blank">http://localhost:8080/ec-demo/import/excel/esb/doImport</a></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in5.jpg" alt="in5"></p>
+<p>5、检查数据库student表，发现数据导入成功。</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in6.jpg" alt="in6"></p>
+<p>当导入成功后，导入进度任务表显示结果为：progress=100，state=DONE</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in7.jpg" alt="in7"></p>
+<h4 id="2714-主从表导入">2.7.1.4 主从表导入</h4>
+<p>1、主从表对应实体类改造，主表Teacher,从表Student</p>
+<p><strong>主表类实例</strong></p>
+<pre class="language-" style="position: relative;"><code class="lang-java">    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Teacher</span> <span class="token keyword">extends</span> <span class="token class-name">BaseModel</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Column</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"TEACHER_ID"</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@Id</span>
+    <span class="token annotation punctuation">@Generator</span><span class="token punctuation">(</span><span class="token string">"snowFlakeGenerator"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> Long teacherId<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Column</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"TEACHER_NAME"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String teacherName<span class="token punctuation">;</span>
+
+   <span class="token comment">//关联实体类    </span>
+    <span class="token keyword">private</span> List<span class="token generics function"><span class="token punctuation">&lt;</span>Student<span class="token punctuation">&gt;</span></span> studentList<span class="token punctuation">;</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p><strong>从表类实例</strong></p>
+<pre class="language-" style="position: relative;"><code class="lang-java">    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token keyword">extends</span> <span class="token class-name">BaseModel</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Column</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"STUDENT_ID"</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@Id</span>
+    <span class="token annotation punctuation">@Generator</span><span class="token punctuation">(</span><span class="token string">"snowFlakeGenerator"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> Long studentId<span class="token punctuation">;</span>
+
+
+    <span class="token annotation punctuation">@Column</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"STUDENT_NAME"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String studentName<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Column</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"AGE"</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> Integer age<span class="token punctuation">;</span>
+
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>2、Excel模板准备</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in8.jpg" alt="in8"></p>
+<p>3、importConfig数据库表配置（表字段过多分2次截图）</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in9.jpg" alt="in9"></p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in10.jpg" alt="in10"></p>
+<p>4、新建导入处理接口和处理类（这里只作打印）</p>
+<pre class="language-" style="position: relative;"><code class="lang-java"><span class="token comment">/**
+ * 批量导入学生和教师
+ * @param excelData
+ */</span>
+<span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">importTeachersStudents</span><span class="token punctuation">(</span>List<span class="token generics function"><span class="token punctuation">&lt;</span>Teacher<span class="token punctuation">&gt;</span></span> excelData<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"主从表导入的内容为：{}"</span><span class="token punctuation">,</span>excelData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button" style="position: absolute; top: 0px; right: 0px; padding: 0px; font-size: 5px; background-color: rgb(49, 62, 78); color: white; border-radius: 5px; border: 2px solid rgb(204, 204, 204);">Copy</button></pre>
+<p>5、数据准备</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in11.jpg" alt="in11"></p>
+<p>6、postman请求测试</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in12.jpg" alt="in12"></p>
+<p>7、查看控制台</p>
+<p><img src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/in13.jpg" alt="in13"></p>
+<h2 id="4-练习场景" targetref="4. 练习场景"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#4-练习场景" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>4. 练习场景</h2>
+<ol>
+<li><p>分页查询导出</p>
+<p>在新表格上增加一个【导出】按钮，点击【导出】按钮，则导出当前页数据。</p>
+</li>
+<li><p>导入</p>
+<p>在新表格上增加一个【导入】按钮，将excel中的数据导入至数据库表中，需要增加过滤条件，只能导入age&gt;18 的学生信息，导入后表格内展示导入的数据。</p>
+</li>
+</ol>
+<h2 id="5、相关材料" targetref="5、相关材料"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#5、相关材料" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-language-override: normal; font-feature-settings: normal; font-variation-settings: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>5、相关材料</h2>
+<ol>
+<li>公司EC前端内部文档 <a href="http://172.16.0.142/html/branch-stage#/?stageId=34&amp;courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b" target="_blank">gschool-导出</a> <a href="http://172.16.0.142/html/branch-stage#/?stageId=35&amp;courseId=2e8c206d-8f6b-4661-b7c2-5f080a7f865b" target="_blank">gschool-导入</a></li>
+<li><a href="http://172.16.0.142/document/training-program/EC3.0/code/ec-demo-excel.zip">示例代码</a></li>
+<li><a href="http://172.16.0.142/document/training-program/EC3.0/code/student.xlsx">导出模板下载</a>         <a href="http://172.16.0.142/document/training-program/EC3.0/code/studentIn.xlsx">导入模板下载</a>           <a href="http://172.16.0.142/document/training-program/EC3.0/code/teacher_student.xlsx">主从表导入模板下载</a></li>
+<li><a href="">视频教程</a> </li>
+</ol>
+<footer class="page-footer"><span class="copyright">Copyright © 吉联科技 2019 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2021-11-02 13:38:35
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    <nav data-gumshoe-header="" class="intopic-toc"><h3></h3><ol data-gumshoe=""><li class="selected"><a href="#1、课件说明" sourceref="1、课件说明" class="selected">1、课件说明</a><ol data-gumshoe=""></ol></li><li><a href="#2、学习步骤" sourceref="2、学习步骤">2、学习步骤</a><ol data-gumshoe=""><li><a href="#21-环境准备" sourceref="2.1 环境准备">2.1 环境准备</a></li><li><a href="#22-excel导出配置" sourceref="2.2 Excel导出配置">2.2 Excel导出配置</a></li><li><a href="#23同步导出" sourceref="2.3同步导出">2.3同步导出</a></li><li><a href="#24-分页查询导出" sourceref="2.4 分页查询导出">2.4 分页查询导出</a></li><li><a href="#25-异步导出" sourceref="2.5 异步导出">2.5 异步导出</a></li><li><a href="#26-布局导出" sourceref="2.6 布局导出">2.6 布局导出</a></li><li><a href="#27-excel导入配置" sourceref="2.7 Excel导入配置">2.7 Excel导入配置</a></li></ol></li><li><a href="#4-练习场景" sourceref="4. 练习场景">4. 练习场景</a><ol data-gumshoe=""></ol></li><li><a href="#5、相关材料" sourceref="5、相关材料">5、相关材料</a><ol data-gumshoe=""></ol></li></ol></nav></div>
+                
+            </div>
+
+            
+                
+                <a href="http://172.16.0.142/document/training-program/EC3.0/%E4%B8%8A%E4%BC%A0%E3%80%81%E4%B8%8B%E8%BD%BD%E6%8E%A7%E4%BB%B6%E4%BD%BF%E7%94%A8.html" class="navigation navigation-prev " aria-label="Previous page: 上传、下载控件使用【T1】">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="http://172.16.0.142/document/training-program/EC3.0/EC%E7%BC%93%E5%AD%98%E4%BD%BF%E7%94%A8.html" class="navigation navigation-next " aria-label="Next page: EC缓存使用【T1】" style="margin-right: 0px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"导入、导出功能使用【T1】","level":"9.2","depth":1,"next":{"title":"EC缓存使用【T1】","level":"9.3","depth":1,"path":"EC3.0/EC缓存使用.md","ref":"./EC3.0/EC缓存使用.md","articles":[]},"previous":{"title":"上传、下载控件使用【T1】","level":"9.1","depth":1,"path":"EC3.0/上传、下载控件使用.md","ref":"./EC3.0/上传、下载控件使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","intopic-toc","theme-comscore","-highlight","prism","prism-themes","advanced-emoji","ace","splitter","-sharing","tbfed-pagefooter","todo","copy-code-button","richquotes"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 吉联科技 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"ace":{},"intopic-toc":{"label":{"de":"文章目录","en":"文章目录","cn":"文章目录"},"selector":".markdown-section h2,h3","visible":true},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"richquotes":{},"theme-comscore":{},"prism-themes":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"吉联技术部","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"吉联培训","gitbook":"*","description":"公司培训大纲"},"file":{"path":"EC3.0/导入、导出功能使用.md","mtime":"2021-11-02T05:38:35.286Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-02T05:47:54.015Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/gitbook.js"></script>
+    <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/theme.js"></script>
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/jquery.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/search.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/anchor.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/gumshoe.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/plugin.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/ace_002.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/ace.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/splitter.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/toggle.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/fontsettings.js"></script>
+        
+    
+        
+        <script src="%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8%E3%80%90T1%E3%80%91%20%C2%B7%20%E5%90%89%E8%81%94%E5%9F%B9%E8%AE%AD_files/test.js"></script>
+        
+    
+
+    
+
+
+</body></html>
